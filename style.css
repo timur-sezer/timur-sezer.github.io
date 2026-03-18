@@ -1,0 +1,101 @@
+:root {
+    --bg-sidebar: #f2f3f7;
+    --bg-main: #ffffff;
+    --text-primary: #000000;
+    --text-muted: #6c757d;
+    --accent-color: #2c98f0;
+    --card-bg: #ffffff;
+}
+
+[data-theme="dark"] {
+    --bg-sidebar: #18191a;
+    --bg-main: #242526;
+    --text-primary: #e4e6eb;
+    --text-muted: #b0b3b8;
+    --accent-color: #3498db;
+    --card-bg: #3a3b3c;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+    overflow-x: hidden;
+}
+
+/* 1. Universal Color Rule - Fixed to avoid blocking hover */
+body, h1, h2, h3, h4, h5, h6, p, li, span, label, div, small {
+    color: var(--text-primary);
+}
+
+/* 2. SANE Muted Rule - We remove the '*' so it doesn't break links */
+.text-muted {
+    color: var(--text-muted) !important;
+}
+
+/* 3. Sidebar Base Styles */
+#sidebar {
+    background-color: var(--bg-sidebar);
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 40px 20px;
+    z-index: 1000;
+    transition: 0.3s;
+}
+
+/* 4. Navigation Links - The critical fix is here */
+#sidebar .nav-link {
+    color: var(--text-primary) !important;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+    background: transparent !important;
+}
+
+/* 5. Hover & Active State - Boosted specificity to win the battle */
+html body #sidebar .nav-link:hover, 
+html body #sidebar .nav-link.active {
+    color: var(--accent-color) !important;
+    opacity: 1 !important;
+}
+
+/* --- Rest of your styles --- */
+
+#sidebar .profile-img-container img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 5px solid rgba(0,0,0,0.05);
+}
+
+#content { margin-left: 300px; width: calc(100% - 300px); }
+section { padding: 100px 0; min-height: 100vh; }
+.bg-alt { background-color: var(--bg-sidebar) !important; }
+
+.card {
+    background-color: var(--card-bg) !important;
+    border: 1px solid rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+.card:hover { transform: translateY(-5px); }
+
+footer { margin-left: 300px; width: calc(100% - 300px); }
+
+@media (max-width: 991px) {
+    #sidebar {
+        width: 100%; height: 100vh; position: relative;
+        display: flex; flex-direction: column;
+        justify-content: center; align-items: center;
+        text-align: center; padding: 20px;
+    }
+    #content, footer { margin-left: 0; width: 100%; }
+    #sidebar { overflow-y: auto; }
+}

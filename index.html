@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmet Sezer Kömürcü | Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav id="sidebar">
+        <div class="sidebar-header text-center">
+            <div class="profile-img-container mb-3">
+                <img src="images/foto.jpg" alt="Ahmet Sezer Kömürcü" class="rounded-circle img-fluid">
+            </div>
+            <h3 class="fs-4">Ahmet Sezer <br> Kömürcü</h3>
+            <p class="text-muted">Aerospace Engineering Student</p>
+        </div>
+
+        <ul class="nav flex-column mt-4 text-center">
+            <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+            <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+            <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+        </ul>
+
+        <div class="sidebar-header text-center mt-3">
+            <div class="form-check form-switch d-inline-block">
+                <input class="form-check-input" type="checkbox" id="darkModeToggle">
+                <label class="form-check-label" for="darkModeToggle">Dark Mode</label>
+            </div>
+           <div class="mt-2">
+                <small class="text-muted">
+                    <a href="mailto:ahmetsezerkomurcu@gmail.com" class="text-decoration-none text-muted">
+                        <i class="fa fa-envelope"></i> ahmetsezerkomurcu@gmail.com
+                    </a>
+                </small>
+            </div>
+        </div>
+
+        <div class="sidebar-footer text-center mt-auto pb-4">
+            <p>&copy; 2026 All rights reserved.</p>
+        </div>
+    </nav>
+
+    <main id="content">
+       
+        <section id="home" class="vh-100 d-flex align-items-center position-relative overflow-hidden">
+            <div class="home-bg-overlay"></div>
+            
+            <div class="container position-relative text-center">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <span class="text-uppercase letter-spacing-2 text-muted mb-3 d-block">Welcome to my Portfolio</span>
+                        <h1 class="display-1 fw-bold mb-3">Hi! <br> I'm <span class="text-primary">Sezer</span></h1>
+                        
+                        <div class="typewriter-container mb-4">
+                            <p class="lead fw-normal text-muted">
+                                Aerospace Engineering Student at Warsaw University of Technology
+                            </p>
+                            <p class="h5 fw-light">
+                                Specializing in <span class="border-bottom border-primary border-2">Computer Vision</span> & <span class="border-bottom border-primary border-2">Robotics</span>
+                            </p>
+                        </div>
+
+                        <div class="d-flex justify-content-center gap-3 mt-5">
+                            <a href="sezer_komurcu_cv.pdf" class="btn btn-primary btn-lg px-4 shadow">
+                                Download CV <i class="fa fa-download ms-2"></i>
+                            </a>
+                            <a href="#about" class="btn btn-primary btn-lg px-2">
+                                About Me
+                            </a>
+                        </div>
+
+                        <div class="mt-5 pt-4">
+                            <div class="d-flex justify-content-center gap-4 fs-4">
+                                <a href="https://www.linkedin.com/in/ahmet-sezer-kömürcü-5b133b234/" class="text-muted hover-primary"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://github.com/timur-sezer" class="text-muted hover-primary"><i class="fab fa-github"></i></a>
+                                <a href="mailto:ahmetsezerkomurcu@gmail.com" class="text-muted hover-primary"><i class="fa fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-5 bg-alt">
+            <div class="container">
+                <span class="text-uppercase text-muted">About Me</span>
+                <h2 class="fw-bold mb-4">Who Am I?</h2>
+                
+                <div class="row mb-5">
+                    <div class="col-md-7">
+                        <p class="lead fw-bold">I am an Aerospace Engineering student passionate about making machines "see."</p>
+                        <p>Currently in my first year at <strong>Warsaw University of Technology</strong>, I bridge the gap between mechanical design and software intelligence. My journey started with leading robotics teams, which evolved into a specialized interest in Computer Vision using YOLOv4 and Python.</p>
+                        <p>Whether it's designing the main case for a <strong>Hexapod robot</strong> with the KNR Bionik team or developing object detection systems for <strong>FPV drones</strong>, I thrive on solving complex problems that require both a wrench and a compiler.</p>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="p-4 bg-main rounded shadow-sm border-start border-primary border-4">
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-3"><strong>Location:</strong> Warsaw, Poland</li>
+                                <li class="mb-3"><strong>Education:</strong> B.Sc. Aerospace Engineering</li>
+                                <li class="mb-3"><strong>Interests:</strong> Computer Vision, Robotics, UAVs</li>
+                                <li><strong>Current Project:</strong> Hexapod Structural Design</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-5 text-center">
+                    <div class="col-md-3 mb-3">
+                        <div class="card border-0 shadow-sm p-4 h-100 expertise-card">
+                            <i class="fa fa-eye fa-2x mb-3" style="color: var(--accent-color);"></i>
+                            <h6 class="fw-bold">Computer Vision</h6>
+                            <p class="small text-muted mb-0">Object detection & image filtering.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="card border-0 shadow-sm p-4 h-100 expertise-card">
+                            <i class="fa fa-plane fa-2x mb-3" style="color: #ec5453;"></i>
+                            <h6 class="fw-bold">Aerospace</h6>
+                            <p class="small text-muted mb-0">UAV systems & flight mechanics.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="card border-0 shadow-sm p-4 h-100 expertise-card">
+                            <i class="fa fa-robot fa-2x mb-3" style="color: #f9bf3f;"></i>
+                            <h6 class="fw-bold">Robotics</h6>
+                            <p class="small text-muted mb-0">Embedded systems & bionic design.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="card border-0 shadow-sm p-4 h-100 expertise-card">
+                            <i class="fa fa-code fa-2x mb-3" style="color: #a84cb8;"></i>
+                            <h6 class="fw-bold">Software Dev</h6>
+                            <p class="small text-muted mb-0">Python, C++ & OpenGL logic.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="skills" class="py-5">
+            <div class="container">
+                <span class="text-uppercase text-muted">My Specialty</span>
+                <h2 class="fw-bold mb-5">Technical Skills & Expertise</h2>
+
+                <div class="row mb-5">
+                    <div class="col-md-4 mb-3">
+                        <div class="card p-4 border-0 shadow-sm h-100 text-center">
+                            <i class="fa fa-microchip fa-2x mb-3 text-primary"></i>
+                            <h5 class="fw-bold">Embedded Systems</h5>
+                            <p class="small text-muted">Developing flight logic and sensor integration for robotics.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card p-4 border-0 shadow-sm h-100 text-center">
+                            <i class="fa fa-project-diagram fa-2x mb-3 text-success"></i>
+                            <h5 class="fw-bold">Computer Vision</h5>
+                            <p class="small text-muted">Real-time object detection and spatial awareness using YOLOv4.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card p-4 border-0 shadow-sm h-100 text-center">
+                            <i class="fa fa-drafting-compass fa-2x mb-3 text-warning"></i>
+                            <h5 class="fw-bold">Aerospace Design</h5>
+                            <p class="small text-muted">Structural design and CAD optimization for UAVs and Hexapods.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <p class="mb-1 fw-bold">OpenCV & YOLOv4</p>
+                        <small class="text-muted d-block mb-2">Image segmentation, filtering, edge detection</small>
+                        <div class="progress" style="height: 10px;">
+                            <div class="progress-bar bg-primary" style="width: 70%"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <p class="mb-1 fw-bold">3D CAD Modeling</p>
+                        <small class="text-muted d-block mb-2">Fusion360, AutoCAD, & SolidWorks</small>
+                        <div class="progress" style="height: 10px;">
+                            <div class="progress-bar bg-warning" style="width: 75%"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <p class="mb-1 fw-bold">Python & Dronekit</p>
+                        <small class="text-muted d-block mb-2">Autonomous navigation and Mavlink protocols</small>
+                        <div class="progress" style="height: 10px;">
+                            <div class="progress-bar bg-danger" style="width: 55%"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <p class="mb-1 fw-bold">C & C++ Languages</p>
+                        <small class="text-muted d-block mb-2">OpenGL and Embedded C (Active Learning)</small>
+                        <div class="progress" style="height: 10px;">
+                            <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 60%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-12">
+                        <h5 class="fw-bold mb-4">Language Proficiency</h5>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="d-flex justify-content-between align-items-center p-3 border rounded">
+                            <span>English (B2-IELTS)</span>
+                            <span class="badge bg-primary">Fluent</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="d-flex justify-content-between align-items-center p-3 border rounded">
+                            <span>Turkish</span>
+                            <span class="badge bg-success">Native</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="d-flex justify-content-between align-items-center p-3 border rounded">
+                            <span>Polish</span>
+                            <span class="badge bg-secondary">A1-Basic</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       <section id="experience" class="py-5 bg-alt">
+            <div class="container">
+                <span class="text-uppercase text-muted">History</span>
+                <h2 class="fw-bold mb-5">Experience</h2>
+                <div class="timeline">
+                    
+                    <div class="mb-5 border-start border-primary ps-4 border-4">
+                        <h4 class="text-primary fw-bold">Active Member - KNR Bionik Team</h4>
+                        <p class="text-muted mb-2">2025 - Present | Warsaw University of Technology</p>
+                        <p>Contributing to the development of a <strong>Hexapod robot</strong>. Responsible for the structural design and optimization of the <strong>new main case</strong> using SolidWorks to house electronic and mechanical components.</p>
+                    </div>
+
+                    <div class="mb-5 border-start border-secondary ps-4 border-4">
+                        <h4 class="fw-bold">Driver</h4>
+                        <p class="text-muted mb-2">Summer 2024 | Sancak Company (Airport Catering)</p>
+                        <p>Managed logistics and transportation for airport catering services during the summer period.</p>
+                    </div>
+
+                    <div class="mb-5 border-start border-secondary ps-4 border-4">
+                        <h4 class="fw-bold">Guest Student (Computer Engineering)</h4>
+                        <p class="text-muted mb-2">2022 - 2023 | Akdeniz University</p>
+                        <p>Completed foundational engineering courses including Data Structures & Algorithms, Object-Oriented Programming (OOP).</p>
+                    </div>
+
+                    <div class="mb-4 border-start border-secondary ps-4 border-4">
+                        <h4 class="fw-bold">Robotic Team Leader</h4>
+                        <p class="text-muted mb-2">2019 - 2022</p>
+                        <ul>
+                            <li>Developed two line-following robots and a mini sumo robot.</li>
+                            <li>Built an FPV drone integrated with YOLOv4 and Dronekit-PyMavlink for vision-based navigation.</li>
+                            <li>Led team management, robotics design, and embedded systems testing.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-5">
+            <div class="container">
+                <span class="text-uppercase text-muted">My Work</span>
+                <h2 class="fw-bold mb-5">Featured Projects</h2>
+                
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="card border-0 shadow-sm h-100 overflow-hidden project-card">
+                            <div class="project-img-placeholder bg-dark d-flex align-items-center justify-content-center" style="height: 250px;">
+                                <i class="fa fa-shuttle-space fa-4x text-white-50"></i>
+                            </div>
+                            <div class="card-body p-4">
+                                <h5 class="fw-bold">Real-Time Object Detection for FPV Drone</h5>
+                                <p class="text-muted small">Developed a Python application using OpenCV and YOLOv4 to process live video feeds for autonomous navigation.</p>
+                                <div class="d-flex gap-2">
+                                    <span class="badge bg-light text-dark border">Python</span>
+                                    <span class="badge bg-light text-dark border">YOLOv4</span>
+                                    <span class="badge bg-light text-dark border">OpenCV</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <div class="card border-0 shadow-sm h-100 overflow-hidden project-card">
+                            <div class="project-img-placeholder bg-secondary d-flex align-items-center justify-content-center" style="height: 250px;">
+                                <i class="fa fa-robot fa-4x text-white-50"></i>
+                            </div>
+                            <div class="card-body p-4">
+                                <h5 class="fw-bold">Hexapod Main Case Design</h5>
+                                <p class="text-muted small">Structural design and optimization for the KNR Bionik Team’s hexapod robot, focusing on electronics housing and heat dissipation.</p>
+                                <div class="d-flex gap-2">
+                                    <span class="badge bg-light text-dark border">SolidWorks</span>
+                                    <span class="badge bg-light text-dark border">Robotics</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <h4 class="fw-bold mb-1">Ahmet Sezer Kömürcü</h4>
+                    <p class="text-white-50 small mb-0">Aerospace Engineering Student | Warsaw University of Technology</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-4 mt-md-0">
+                    <div class="d-flex justify-content-center justify-content-md-end gap-3 mb-3">
+                        <a href="mailto:ahmetsezerkomurcu@gmail.com" class="text-white hover-primary fs-4"><i class="fa fa-envelope"></i></a>
+                        <a href="https://www.linkedin.com/in/ahmet-sezer-kömürcü-5b133b234/" class="text-white hover-primary fs-4"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/timur-sezer" class="text-white hover-primary fs-4"><i class="fab fa-github"></i></a>
+                    </div>
+                    <p class="text-white-50 small mb-0">&copy; 2026 Sezer Kömürcü. Built for Engineering Excellence.</p>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="" class="text-white-50 text-decoration-none small">
+                    <i class="fa fa-arrow-up me-1"></i> Back to Top
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
